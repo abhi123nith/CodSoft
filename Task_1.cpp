@@ -8,6 +8,8 @@ int main()
  
   int high=100;
   int low=1;
+
+  cout<<"Lower Limit and Higher limit are : "<<low<< " and "<<high<<endl;
 // using srand() for  generating a different number for each time
 	srand(time(0));
 
