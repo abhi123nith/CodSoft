@@ -12,7 +12,7 @@ void display(){
     cout<<""<< board[0][0] <<"  | "<<board[0][1]<<" | "<<board[0][2]<<endl;
     cout<<"_ _ _ _ _ _   "<<endl;
     cout<<board[1][0]  <<"  | "<<board[1][1]<<" | "<<board[1][2]<<endl;
-     cout<<"_ _ _ _ _ _ _ "<<endl;
+     cout<<"_ _ _ _ _ _ "<<endl;
     cout<<board[2][0]<<"  | "<<board[2][1]<<" | "<<board[2][2]<<endl;
 }
 
@@ -73,13 +73,18 @@ if(board[0][0] == board[1][1] && board[0][0] == board[2][2] || board[0][2] == bo
     for(int j=0; j<3; j++){
     if(board[i][j] != 'X' && board[i][j] != 'O')
     return true;
-    }}
+    }
+    }
 draw=true;
 return false;
 
 }
 int main()
 {
+
+    cout<<"WELCOME TO THE GAME : "<<endl;
+    cout<<"TIC - TAC - TOE "<<endl;
+    cout<<"START YOUR GAME "<<endl;
     while(Over()){
     display();
     player_turn();
@@ -87,13 +92,16 @@ int main()
     }
 
     if(turn=='X' && draw==false){
-        cout<<"WOW !! Congratulations Player-1[X] has won the match"<<endl;
+        cout<<" WOW !! Congratulations Player-2[O] has won the match "<<endl;
+       
     }
     else if(turn=='O' && draw==false){
-        cout<<" WOW !! Congratulations Player-2[O] has won the match "<<endl;
+         cout<<"WOW !! Congratulations Player-1[X] has won the match"<<endl;
     }
     else 
     {
         cout<<"!!! Game DRAW  !!!! "<<endl;
     }
+
+    cout<<"THANK YOU FOR PLAY THE GAME !";
 }

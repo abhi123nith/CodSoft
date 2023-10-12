@@ -18,7 +18,7 @@ int main()
 
 
 	cout<<"Guess a number between high and low case :  ";
-
+     cout<<endl;
 	do {
 
 		cin>>n;
